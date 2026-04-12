@@ -1,0 +1,1 @@
+{"version":3,"file":"page_master.entity.d.ts","sourceRoot":"","sources":["../../src/entities/page_master.entity.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,QAAQ,EAAE,MAAM,oBAAoB,CAAC;AAE9C,aAAK,MAAM;IACT,MAAM,WAAW;IACjB,QAAQ,aAAa;CACtB;AAED,qBACa,gBAAiB,SAAQ,QAAQ;IAE5C,YAAY,EAAE,MAAM,CAAC;IAGrB,QAAQ,EAAE,MAAM,CAAC;IAGjB,QAAQ,EAAE,MAAM,CAAC;IAGjB,MAAM,EAAE,MAAM,CAAC;CAChB"}

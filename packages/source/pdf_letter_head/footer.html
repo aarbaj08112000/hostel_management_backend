@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="invoice_new.css" />
+  
+  <div class="footer">
+    <div class="contact-info">
+    <div class="logo-footer-text">{{footer.companyName}}</div>
+    <p>{{footer.address}}</p>
+    <div style="margin-bottom:10px">TRN: <span style="color:#EC1E24; text-decoration:none"> {{footer.trn}}</span> </div>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+        <td class="d-block" valign="middle"><img src="{{imgs.callIcon}}" width="16" height="16" alt=" " style="vertical-align:middle"> <a href="tel:{{footer.trn}}" style="color:#EC1E24; text-decoration:none">{{footer.contact}}</a></td>
+        <td class="d-block" ><img src="{{imgs.globalIcon}}" width="16" height="16" alt=" " style="vertical-align:middle"> <a href="{{footer.website_url}}" style="color:#222222;text-decoration:none">{{footer.website_display}}</a></td>
+        <td class="d-block" ><img src="{{imgs.emailIcon}}" width="16" height="16" alt=" " style="vertical-align:middle"> <a href="mailto:{{footer.email}}" style="color:#EC1E24; text-decoration:none">{{footer.email}}</a></td>
+      </tr>
+      </table>
+  </div>
+    <div class="printed-by">
+   <div>Printed By <b>{{footer.companyName}}</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date : <b>{{footer.current_date}} at {{footer.current_time}}</b></div>
+    <div><i>This is a computer-generated {{invoiceTitleLower}}, no signature is required.</i></div>
+  </div>
+  </div>

@@ -1,0 +1,1 @@
+{"version":3,"file":"charges.entities.d.ts","sourceRoot":"","sources":["../../src/entities/charges.entities.ts"],"names":[],"mappings":"AAAA,OAAO,EAA0C,UAAU,EAAE,MAAM,SAAS,CAAC;AAE7E,qBACa,OAAQ,SAAQ,UAAU;IAErC,SAAS,EAAE,MAAM,CAAC;IAGlB,UAAU,EAAE,MAAM,CAAC;IAGnB,YAAY,EAAE,MAAM,CAAC;IAGrB,UAAU,EAAE,OAAO,GAAG,UAAU,CAAC;IAGjC,SAAS,EAAE,IAAI,CAAC;IAGhB,WAAW,EAAE,IAAI,CAAC;CACnB"}

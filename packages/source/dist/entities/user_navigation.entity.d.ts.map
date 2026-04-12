@@ -1,0 +1,1 @@
+{"version":3,"file":"user_navigation.entity.d.ts","sourceRoot":"","sources":["../../src/entities/user_navigation.entity.ts"],"names":[],"mappings":"AAEA,aAAK,cAAc;IACjB,KAAK,UAAU;IACf,KAAK,UAAU;CAChB;AAED,qBACa,oBAAoB;IAE/B,YAAY,EAAE,MAAM,CAAC;IAGrB,SAAS,EAAE,MAAM,CAAC;IAGlB,MAAM,EAAE,MAAM,CAAC;IAGf,cAAc,EAAE,cAAc,CAAC;CAChC"}

@@ -1,0 +1,55 @@
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# Build output
+/dist
+/build
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# IDEs & Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Coverage
+/coverage
+
+# Misc
+*.tsbuildinfo
+.npm
+.eslintcache
+
+# Temporary files
+tmp/
+temp/
+
+# Docker (optional)
+docker-compose.override.yml
+
+# Prisma (if used)
+prisma/migrations/
+
+# Nest CLI cache
+.nestcli.json
+
+# Uploads (if your app stores files locally)
+uploads/

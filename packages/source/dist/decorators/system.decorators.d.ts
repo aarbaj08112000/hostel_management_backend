@@ -1,0 +1,20 @@
+import { ValidationOptions } from 'class-validator';
+export declare function PasswordMatch(property: string, flag: string, message: string, validationOptions?: ValidationOptions): (object: object, propertyName: string) => void;
+export declare function DateEqualTo(property: string, validationOptions?: ValidationOptions): (object: object, propertyName: string) => void;
+export declare function DateGreaterThan(property: string, validationOptions?: ValidationOptions): (object: object, propertyName: string) => void;
+export declare function DateLessThan(property: string, validationOptions?: ValidationOptions): (object: object, propertyName: string) => void;
+export declare function DateGreaterEqual(property: string, validationOptions?: ValidationOptions): (object: object, propertyName: string) => void;
+export declare function DateLessEqual(property: string, validationOptions?: ValidationOptions): (object: object, propertyName: string) => void;
+export declare function NumEqualTo(property: string, validationOptions?: ValidationOptions): (object: object, propertyName: string) => void;
+export declare function NumLessEqual(property: string, validationOptions?: ValidationOptions): (object: object, propertyName: string) => void;
+export declare function NumGreaterEqual(property: string, validationOptions?: ValidationOptions): (object: object, propertyName: string) => void;
+export declare function NumLessThan(property: string, validationOptions?: ValidationOptions): (object: object, propertyName: string) => void;
+export declare function NumGreaterThan(property: string, validationOptions?: ValidationOptions): (object: object, propertyName: string) => void;
+export declare function TimeEqualTo(property: string, validationOptions?: ValidationOptions): (object: object, propertyName: string) => void;
+export declare function TimeLessThan(property: string, validationOptions?: ValidationOptions): (object: object, propertyName: string) => void;
+export declare function TimeLessEqual(property: string, validationOptions?: ValidationOptions): (object: object, propertyName: string) => void;
+export declare function TimeGreaterThan(property: string, validationOptions?: ValidationOptions): (object: object, propertyName: string) => void;
+export declare function TimeGreaterEqual(property: string, validationOptions?: ValidationOptions): (object: object, propertyName: string) => void;
+export declare function NotEquals(property: string, validationOptions?: ValidationOptions): (object: object, propertyName: string) => void;
+export declare function Equals(property: string, validationOptions?: ValidationOptions): (object: object, propertyName: string) => void;
+//# sourceMappingURL=system.decorators.d.ts.map

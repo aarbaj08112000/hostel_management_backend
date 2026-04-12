@@ -1,0 +1,1 @@
+{"version":3,"file":"state.entity.d.ts","sourceRoot":"","sources":["../../src/entities/state.entity.ts"],"names":[],"mappings":"AAEA,aAAK,MAAM;IACT,MAAM,WAAW;IACjB,QAAQ,aAAa;CACtB;AAED,qBACa,WAAW;IAEtB,EAAE,EAAE,MAAM,CAAC;IAGX,KAAK,EAAE,MAAM,CAAC;IAGd,SAAS,EAAE,MAAM,CAAC;IAGlB,SAAS,EAAE,MAAM,CAAC;IAGlB,MAAM,EAAE,MAAM,CAAC;IAGf,SAAS,EAAE,IAAI,CAAC;IAOhB,SAAS,EAAE,IAAI,CAAC;CACjB"}

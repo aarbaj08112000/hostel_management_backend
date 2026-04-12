@@ -1,0 +1,1 @@
+{"version":3,"file":"car_images.entity.d.ts","sourceRoot":"","sources":["../../src/entities/car_images.entity.ts"],"names":[],"mappings":"AACA,aAAK,SAAS;IACZ,KAAK,UAAU;IACf,IAAI,SAAS;IACb,IAAI,SAAS;IACb,QAAQ,aAAa;IACrB,MAAM,WAAW;IACjB,SAAS,cAAc;CACxB;AACD,qBACa,eAAe;IAE1B,UAAU,EAAE,MAAM,CAAC;IAGnB,KAAK,EAAE,MAAM,CAAC;IAGd,SAAS,EAAE,MAAM,CAAC;IAGlB,SAAS,EAAE,SAAS,CAAC;CACtB"}

@@ -1,0 +1,146 @@
+<link rel="stylesheet" href="invoice_new.css" />
+
+  <div class="middle-content">
+    <div class="invoice-info">
+      <div class="buyer-info">
+        <div style="color:#666666; font-size:16px">Buyer</div>
+        <p style="color:#000000; font-size:20px"><strong>{{buyer.name}}</strong></p>
+        <p><span class="item-label">Contact: </span>{{buyer.contact}}</p>
+        <p><span class="item-label">Email: </span>{{buyer.email}}</p>
+        <p><span class="item-label">Address: </span>{{buyer.address}}</p>
+      </div>
+      <div class="buyer-info">
+      {{#compare invoiceType "eq" "invoice"}}
+        <div style="color:#666666; font-size:16px">Total Amount</div>
+        <p style="color:#EC1E24; font-weight: bold; font-size:20px;"> <span style="font-size:20px;font-weight:400"> AED</span> {{summary.payableAmount}}</p>
+      
+      {{else}}
+      <div style="color:#666666; font-size:16px">Total Due </div>
+      <p style="color:#EC1E24; font-weight: bold; font-size:20px;"> <span style="font-size:20px;font-weight:400"> AED</span> {{totalDue}}</p>
+    
+      {{/compare}}
+         <p><span class="item-label" style="width:120px">Invoice No.: </span> {{invoiceNo}}</p>
+        <p><span class="item-label" style="width:120px">Issue Date: </span>{{issueDate}}</p>
+      </div>
+    </div>
+    <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <thead>
+        <tr>
+          <th align="left">Sr.No.</th>
+        <th align="left">Description</th>
+        <th align="right" width="180">Quantity</th>
+        <th align="right" width="180">Price (AED)</th>
+        <th align="right" width="180">Amount (AED)</th>
+      </tr>
+      </thead>
+      <tbody>
+        {{#each items}}
+        <tr>
+          <td>1</td>
+          <td><strong>{{description}}</strong>
+            <div class="table-sub-details">
+              <div class="table-sub-labels">
+                <label>Chassis Number:</label>
+                <span>{{chassisNumber}}</span> </div>
+              <div class="table-sub-labels">
+                <label>Year:</label>
+                <span>{{manufactureYear}}</span> </div>
+              <div class="table-sub-labels">
+                <label>Kilometers:</label>
+                <span>{{drivenDistance}}</span> </div>
+              <div class="table-sub-labels">
+                <label>Brand:</label>
+                <span>{{brandName}}</span> </div>
+                <div class="table-sub-labels">
+                  <label>Model:</label>
+                  <span>{{modelName}}</span> </div>
+              <div class="table-sub-labels">
+                <label>Trim:</label>
+                <span>{{trim}}</span> </div>
+              <div class="table-sub-labels">
+                <label>Color:</label>
+                <span>{{color}}</span> </div>
+            </div></td>
+          <td align="right">{{quantity}}</td>
+          <td align="right">{{price}}</td>
+          <td align="right">{{total}}</td>
+        </tr>
+        {{/each}}
+        <tr>
+          <td></td>
+          <td colspan="4" style="padding:0"><table class="table-sub" cellpadding="0" cellspacing="0" border="0" width="100%">
+            {{#if services.length}}
+            <tr>
+                <th align="left"><strong style="color:#EC1E24;">Add on Service</strong></th>
+                <th align="right" width="180"></th>
+                <th align="right" width="180"></th>
+                <th align="right" width="180"></th>
+              </tr>
+              {{#each services}}
+              <tr>
+                <td align="left">{{service_name}}</td>
+                <td align="right"></td>
+                <td align="right">{{rate_value}}</td>
+                <td align="right">{{rate_value}}</td>
+              </tr>
+              {{/each}}
+            {{/if}}
+            {{#if charges.length}}
+              <tr>
+                <th align="left"><strong style="color:#EC1E24;">Ex.Showroom Charges</strong></th>
+                <th align="right" width="180"></th>
+                <th align="right" width="180"></th>
+                <th align="right" width="180"></th>
+              </tr> 
+              {{#each charges}}
+              <tr>
+                <td align="left">{{charge_name}}</td>
+                <td align="right"></td>
+                <td align="right">{{rate_value}}</td>
+                <td align="right">{{rate_value}}</td>
+              </tr>
+              {{/each}}
+            {{/if}}
+            </table>
+          </td>
+        </tr>
+      </tbody>
+      
+  </table>
+  <div class="summary-info" style="margin-top: auto; display:flex; justify-content:space-between">
+    <div class="remarks">
+      <h4>Remarks</h4>  
+          <p>If finance is required, an additional AED {{finance_evaluation}} will be applicable.</p>   
+          <p>VAT is charged with reference to Profit Margin scheme As per Article-29 of Cabinet Decision No. (52) of 2017 on Executive regulations of the Federal Decree-Law No. (8).
+</p><p>RTA Passing and registration cost will be beared by the customer.</p>
+    </div>
+      <div class="summary">
+        <div style="font-size:20px; color:#000000; font-weight:bold; border-bottom:2px solid #999999; line-height:50px;">Summary </div>
+        <table width="100%" border="0" cellpadding="5" cellspacing="0" class="summary-table">
+          <tr>
+            <td><strong>Total Amount</strong></td>
+            <td><strong>{{summary.totalAmount}}</strong></td>
+          </tr>
+          <!-- <tr>
+            <td>Ex-Showroom Charges</td>
+            <td>{{summary.exShowroomCharges}}</td>
+          </tr>
+          <tr>
+            <td>Add On Service</td>
+            <td>{{summary.addonService}}</td>
+          </tr> -->
+   
+          <tr>
+            <td>Discount</td>
+            <td>{{summary.discount}}</td>
+          </tr>
+          <!-- <tr>
+            <td>Advance Paid</td>
+            <td>-AED 2,000.00</td>
+          </tr> -->
+        </table>
+        <p class="net-amount">Net Amount: <span>AED {{summary.payableAmount}}</span></p>
+      </div>
+    </div>
+    <div class="thankyou-note"> Thank You For Your Business </div>
+  </div>

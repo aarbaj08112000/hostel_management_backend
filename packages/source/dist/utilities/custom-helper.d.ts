@@ -1,0 +1,32 @@
+export declare function getRandomString(pattern: string, length: number, params: any): any;
+export declare function getRandomNumber(length: number): any;
+export declare function truncateChars(str: string, len: number): string;
+export declare function evaluateExpression(expr: string): any;
+export declare function isExternalURL(url: string): boolean;
+export declare function getTotalPages(total: number, perPage: number): number;
+export declare function getStartIndex(page: number, limit: number): number;
+export declare function getPagination(total: any, page: any, limit: any): {
+    count: any;
+    per_page: any;
+    curr_page: any;
+    last_page: number;
+    prev_page: boolean;
+    next_page: boolean;
+};
+export declare function getFilteredList(list: any): any;
+export declare function getAssocDropdown(list: any): {};
+export declare function getTreeDropdown(data: any, id: number, inc: number, lbl: string, opt: string): any[];
+export declare function getIPAddress(req: any): string;
+export declare function getPasswordHash(password: string): string;
+export declare function comparePasswordHash(plainPwd: string, hashPwd: string): boolean;
+export declare function replaceHashedParameters(str: string, params: any): string;
+export declare function processRequestPregMatch(str: string, params: any): string;
+export declare function processSystemPregMatch(str: string, params: any): string;
+export declare function compareTime(time1: string, time2: string, operator: string): 0 | 1;
+export declare function getRouteAPIName(routePath: string, method: string): string;
+export declare function sanitizeUniqueName(item: string): string;
+export declare function snakeToPascal(str: string): string;
+export declare function snakeToCamel(str: string): string;
+export declare function isEmpty(str: any): any;
+export declare function lang(key: string, language?: string | Record<string, any>, options?: Record<string, any>): string;
+//# sourceMappingURL=custom-helper.d.ts.map

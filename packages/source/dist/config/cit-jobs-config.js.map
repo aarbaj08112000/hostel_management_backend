@@ -1,0 +1,1 @@
+{"version":3,"file":"cit-jobs-config.js","sourceRoot":"","sources":["../../src/config/cit-jobs-config.ts"],"names":[],"mappings":";;;AAAa,QAAA,MAAM,GAAG,EAAE,CAAC;AAEZ,QAAA,QAAQ,GAAG;IACtB,MAAM,EAAE,CAAC,YAAY,CAAC;IACtB,MAAM,EAAE,CAAC,gBAAgB,EAAE,kBAAkB,CAAC;IAC9C,MAAM,EAAE,CAAC,cAAc,CAAC;IACxB,MAAM,EAAE,CAAC,oBAAoB,CAAC;IAC9B,MAAM,EAAE,CAAC,oBAAoB,CAAC;CAC/B,CAAC"}

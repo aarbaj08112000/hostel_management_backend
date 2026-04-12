@@ -1,0 +1,1 @@
+{"version":3,"file":"base-user.entity.d.ts","sourceRoot":"","sources":["../../src/entities/base-user.entity.ts"],"names":[],"mappings":"AACA,qBAAa,QAAQ;IAEnB,OAAO,EAAE,MAAM,CAAC;IAGhB,SAAS,EAAE,MAAM,CAAC;IAGlB,SAAS,EAAE,IAAI,CAAC;IAOhB,WAAW,EAAE,IAAI,CAAC;CACnB"}

@@ -1,0 +1,61 @@
+<link href="invoice_new.css" type="text/css" rel="stylesheet" />
+<div class="middle-content">
+  <div class="invoice-info">
+    <div class="buyer-info">
+      <div style="color:#666666; font-size:16px">Buyer</div>
+      <p style="color:#000000; font-size:20px"><strong>{{buyer.name}}</strong></p>
+      <p><span class="item-label">Contact: </span>{{buyer.contact}}</p>
+      <p><span class="item-label">Email: </span>{{buyer.email}}</p>
+    </div>
+    <div class="buyer-info">
+      <div class="paid-badge">
+        <img src="{{imgs.paidImgUrl}}" width="150" height="150" alt=" ">
+      </div>
+      <div style="color:#666666; font-size:16px">Paid Amount</div>
+      <p style="color:#389E0D; font-weight: bold; font-size:20px;">
+        <span style="font-size:16px;font-weight:400"> AED</span> {{payment.paidAmount}}
+      </p>
+      <p><span class="item-label" style="width:120px">Receipt No.: </span> {{payment.receiptNumber}}</p>
+      <p><span class="item-label" style="width:120px">Issue Date: </span> {{payment.issueDate}}</p>
+    </div>
+  </div>
+  <div class="payment-details">
+    <h2><span> Payment Details</span> </h2>
+    <div class="details-row">
+      <div class="info-item w-100">
+        <span class="info-label"> Description </span>
+        <div class="value">
+          {{payment.description}}
+        </div>
+      </div>
+    </div>
+    <div class="details-row">
+      <div class="info-item w-33">
+        <span class="info-label"> Transaction Number </span>
+        <div class="value"> {{transaction.number}} </div>
+      </div>
+      <div class="seperator"></div>
+      <div class="info-item w-33">
+        <span class="info-label"> Payment Mode </span>
+        <div class="value"> {{transaction.mode}} </div>
+      </div>
+      <div class="seperator"></div>
+      <div class="info-item w-33">
+        <span class="info-label"> Amount (AED) </span>
+        <div class="value"> {{transaction.amount}} </div>
+      </div>
+    </div>
+    <div class="details-row">
+      <div class="info-item w-100">
+        <span class="info-label"> Amount in Word (AED) </span>
+        <div class="value"> {{transaction.amountInWords}} </div>
+      </div>
+    </div>
+    <div class="details-row" style="border-bottom : none !important">
+      <div class="info-item w-100">
+        <span class="info-label"> Remarks </span>
+        <div class="value"> {{transaction.remarks}} </div>
+      </div>
+    </div>
+  </div>
+</div>
